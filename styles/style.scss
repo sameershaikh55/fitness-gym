@@ -1,0 +1,370 @@
+// IMPORTING FONT START
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+// IMPORTING FONT END
+
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	// position: relative;
+	margin: 0px;
+	padding: 0px;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: "roboto", sans-serif;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 80% !important;
+	}
+}
+
+// === HEADER START ===
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+.logo-style {
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	color: #3b0918;
+	text-transform: uppercase;
+}
+
+.main-logo-link {
+	width: fit-content;
+}
+
+.main-logo-link:hover {
+	color: #821536;
+}
+
+.nav-link {
+	display: block;
+	padding: 0.5rem 1rem;
+}
+
+.icon {
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.logo-font {
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+	font-family: "Josefin Sans", sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url("");
+}
+
+.text-black {
+	color: #000 !important;
+}
+
+.border-black {
+	border: 1px solid black !important;
+}
+
+.btn-black {
+	background: black !important;
+	color: white !important;
+}
+
+.btn:hover {
+	color: #212529 !important;
+	text-decoration: none !important;
+}
+
+@media screen and (max-width: 568px) {
+	.list-inline-item {
+		font-size: 12px;
+		padding: 5px;
+
+		.nav-link {
+			padding: 0px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.logo-style {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header-container {
+		padding-top: 164px;
+	}
+}
+
+@media (max-width: 991px) {
+	.header-container {
+		padding-top: 116px;
+	}
+}
+
+@media screen and (min-width: 575px) {
+	.bodyCont {
+		position: absolute;
+		bottom: 0%;
+		left: 0%;
+	}
+}
+// === HEADER END ===
+
+// === FOOTER START ===
+#footer {
+	// position: absolute;
+	// bottom: 0%;
+	// left: 0%;
+	width: 100%;
+	height: 150px;
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #d3d3d3;
+	font-size: 15px;
+	padding-top: 10px;
+}
+
+.social-icon {
+	color: #3b0918;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.footer-icons {
+	color: #3b0918;
+}
+
+.footer-links {
+	color: #3b0918;
+
+	&:hover {
+		color: #821536;
+	}
+}
+// === FOOTER END ===
+
+// HOME IMAGE SECTION START
+#hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+		url(https://wallpaperaccess.com/full/1108004.jpg);
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+
+#hero-text {
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	color: #fff3d9;
+}
+
+.shop-hampers-button {
+	background: black !important;
+	color: white !important;
+	min-width: 260px !important;
+
+	&:hover {
+		background: #222 !important;
+		color: white !important;
+	}
+}
+// HOME IMAGE SECTION END
+
+// HOME ABOUT SECTION START
+.about-section {
+	padding: 100px 130px;
+}
+
+.blog-section-text {
+	background-color: #b3c0ae;
+
+	h2 {
+		padding-top: 100px;
+		padding-bottom: 20px;
+	}
+
+	p {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+.view-blog-button {
+	background: black !important;
+	color: white !important;
+	min-width: 260px !important;
+
+	&:hover {
+		background: #222 !important;
+		color: white !important;
+	}
+}
+
+.testimonial-section-text {
+	background-color: #fff3d9;
+
+	h2 {
+		padding-top: 100px;
+		padding-bottom: 20px;
+	}
+
+	p {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.blog-section-text {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+.cardImg {
+	height: 155px;
+	width: 100%;
+	object-fit: cover;
+}
+
+// HOME ABOUT SECTION END
+
+// SINGLE PRODUCT SECTION START
+@media screen and (min-width: 768px) {
+	.bodyCont2 {
+		position: absolute;
+		bottom: 0%;
+		left: 0%;
+	}
+}
+
+.btn-outline-black {
+	background: white !important;
+	color: black !important;
+	border: 1px solid black !important;
+
+	&:hover {
+		background: #222 !important;
+		color: white !important;
+	}
+}
+@media (max-width: 991px) {
+	.btn.btn-outline-black.rounded-0,
+	.btn.btn-black.rounded-0 {
+		padding: 0.375rem 0.375rem;
+	}
+}
+// SINGLE PRODUCT SECTION END
+
+// TESTIMONIALS SECTION START
+.testimonials-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.card-style-testimonial {
+		background-color: #fff3d9;
+	}
+}
+// TESTIMONIALS SECTION END
+
+// BLOG SECTION START
+.blog-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+// BLOG SECTION END
+
+// REGISTER SECTION START
+@media (min-width: 992px) {
+	.header-container2 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 991px) {
+	.header-container2 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.allauth-form-inner-content {
+	p {
+		margin-top: 1.5rem;
+		color: #6c757d;
+	}
+
+	input {
+		border-color: #000;
+		border-radius: 0;
+	}
+
+	label:not([for="id_remember"]) {
+		display: none;
+	}
+}
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type="submit"] {
+	display: inline-block;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #000;
+	border: 1px solid #000;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#regFooter {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;
+}
+// REGISTER SECTION END
+
+// 	BAG SECTION START
+.empty-bag {
+	padding-bottom: 250px;
+}
+// 	BAG SECTION END

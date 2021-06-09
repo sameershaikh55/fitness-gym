@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- LINKS START -->
+		<link rel="stylesheet" href="styles/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<!-- LINKS END -->
+		<title>Category</title>
+	</head>
+	<body>
+		<!-- ===== HEADER SECTION START ===== -->
+		<header class="container-fluid fixed-top">
+			<div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+				<div
+					class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left"
+				>
+					<a href="/" class="nav-link main-logo-link logo-style">Fitness-Gym</a>
+				</div>
+				<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+					<form method="GET" action="/products/">
+						<div class="input-group w-100">
+							<input
+								class="form-control border-black rounded-0"
+								type="text"
+								name="q"
+								placeholder="Search Hampers"
+							/>
+							<div class="input-group-append">
+								<button
+									class="form-control btn btn-black border-black rounded-0"
+									type="submit"
+								>
+									<span class="icon">
+										<i class="fas fa-search" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+					<ul class="list-inline list-unstyled text-center text-lg-right my-0">
+						<li class="list-inline-item dropdown">
+							<a
+								class="text-black nav-link"
+								href="#"
+								id="user-options"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<div class="text-center">
+									<div>
+										<i class="fas fa-user fa-lg" aria-hidden="true"></i>
+									</div>
+									<p class="my-0 logo-font">My Account</p>
+								</div>
+							</a>
+							<div
+								class="dropdown-menu border-0"
+								aria-labelledby="user-options"
+							>
+								<a href="register.html" class="dropdown-item logo-font"
+									>Register</a
+								>
+								<a href="login.html" class="dropdown-item logo-font">Login</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<a class="text-black nav-link" href="bag.html">
+								<div class="text-center">
+									<div>
+										<i class="fas fa-shopping-bag fa-lg" aria-hidden="true"></i>
+									</div>
+									<p class="my-0 logo-font">$0.00</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row bg-white">
+				<nav class="navbar navbar-expand-lg navbar-light w-100">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#main-nav"
+						aria-controls="main-nav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<ul class="list-unstyled list-inline mt-3 mt-md-0">
+						<li class="list-inline-item">
+							<a
+								class="text-black nav-link d-block d-lg-none"
+								href="#"
+								id="mobile-search"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<div class="text-center">
+									<div>
+										<i class="fas fa-search fa-lg" aria-hidden="true"></i>
+									</div>
+									<p class="my-0">Search</p>
+								</div>
+							</a>
+							<div
+								class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0"
+								aria-labelledby="mobile-search"
+							>
+								<form class="form" method="GET" action="/products/">
+									<div class="input-group w-100">
+										<input
+											class="form-control border border-black rounded-0"
+											type="text"
+											name="q"
+											placeholder="Search our site"
+										/>
+										<div class="input-group-append">
+											<button
+												class="
+													form-control form-control
+													btn btn-black
+													border border-black
+													rounded-0
+												"
+												type="submit"
+											>
+												<span class="icon">
+													<i class="fas fa-search" aria-hidden="true"></i>
+												</span>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li class="list-inline-item dropdown">
+							<a
+								class="text-black nav-link d-block d-lg-none"
+								href="#"
+								id="user-options-mob"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<div class="text-center">
+									<div>
+										<i class="fas fa-user fa-lg" aria-hidden="true"></i>
+									</div>
+									<p class="my-0">My Account</p>
+								</div>
+							</a>
+							<div
+								class="dropdown-menu border-0"
+								aria-labelledby="user-options-mob"
+							>
+								<a href="" class="dropdown-item">Register</a>
+								<a href="" class="dropdown-item">Login</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<a class="text-black nav-link d-block d-lg-none" href="bag.html">
+								<div class="text-center">
+									<div>
+										<i class="fas fa-shopping-bag fa-lg" aria-hidden="true"></i>
+									</div>
+									<p class="my-0">$0.00</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="collapse navbar-collapse mt-3" id="main-nav">
+						<ul class="navbar-nav w-auto mx-auto">
+							<li class="nav-item d-block d-md-none">
+								<a
+									class="logo-font font-weight-bold nav-link text-black mr-5"
+									href="/"
+									id="home-link"
+								>
+									Home
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="logo-font font-weight-bold nav-link text-black mr-5"
+									href="#"
+									id="all-products-link"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									All Hampers
+								</a>
+								<div
+									class="dropdown-menu border-0"
+									aria-labelledby="all-products-link"
+								>
+									<a href="products.html" class="logo-font dropdown-item"
+										>By Price</a
+									>
+									<a href="products.html" class="logo-font dropdown-item"
+										>By Category</a
+									>
+									<a href="products.html" class="logo-font dropdown-item"
+										>All Hampers</a
+									>
+								</div>
+							</li>
+
+							<li class="nav-item">
+								<a
+									href="category.html"
+									class="logo-font font-weight-bold nav-link text-black mr-5"
+									id="savoury-link"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Savoury
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									href="category.html"
+									class="logo-font font-weight-bold nav-link text-black mr-5"
+									id="sweet-link"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Sweet
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									href="category.html"
+									class="logo-font font-weight-bold nav-link text-black"
+									id="campfire-link"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									CampFire
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="container header-container">
+			<div class="row">
+				<div class="col"></div>
+			</div>
+		</div>
+		<!-- ===== HEADER SECTION END ===== -->
+
+		<!-- ===== BODY SECTION START ===== -->
+		<div class="bodyCont">
+			<div class="container-fluid pb-4">
+				<div class="row">
+					<div class="col text-center mt-3">
+						<h2 class="logo-font">Hampers</h2>
+						<hr class="w-50 mb-1 mx-auto" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="product-container col-10 offset-1">
+						<div class="row mt-1 mb-2">
+							<div
+								class="
+									col-12 col-md-6
+									my-auto
+									order-md-last
+									d-flex
+									justify-content-center justify-content-md-end
+								"
+							>
+								<div class="sort-select-wrapper w-50">
+									<select
+										id="sort-selector"
+										class="
+											custom-select custom-select-sm
+											rounded-0
+											border-black
+										"
+									>
+										<option value="reset" selected="">Sort by...</option>
+										<option value="price_asc">Price (low to high)</option>
+										<option value="price_desc">Price (high to low)</option>
+										<option value="name_asc">Name (A-Z)</option>
+										<option value="name_desc">Name (Z-A)</option>
+										<option value="category_asc">Category (A-Z)</option>
+										<option value="category_desc">Category (Z-A)</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 order-md-first">
+								<p class="text-muted mt-3 text-center text-md-left">
+									<span class="small"
+										><a href="">Back to All Hampers</a> |
+									</span>
+
+									2 Products
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+								<div class="card h-100 border-0">
+									<a href="singleProduct.html">
+										<img
+											class="cardImg"
+											src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zml0bmVzc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+											alt="Breakfast Patisseries"
+										/>
+									</a>
+
+									<div class="card-body pb-0">
+										<p class="mb-0">Breakfast Patisseries</p>
+									</div>
+									<div class="card-footer bg-white pt-0 border-0 text-left">
+										<div class="row">
+											<div class="col">
+												<p class="lead mb-0 text-left font-weight-bold">
+													$25.00
+												</p>
+
+												<p class="small mt-1 mb-0">
+													<a class="text-muted" href="category.html">
+														<i class="fas fa-tag mr-1" aria-hidden="true"></i
+														>Sweet
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 d-sm-none mb-5">
+								<hr />
+							</div>
+
+							<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+								<div class="card h-100 border-0">
+									<a href="singleProduct.html">
+										<img
+											class="cardImg"
+											src="https://images.pexels.com/photos/841135/pexels-photo-841135.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+											alt="Doughnuts"
+										/>
+									</a>
+
+									<div class="card-body pb-0">
+										<p class="mb-0">Doughnuts</p>
+									</div>
+									<div class="card-footer bg-white pt-0 border-0 text-left">
+										<div class="row">
+											<div class="col">
+												<p class="lead mb-0 text-left font-weight-bold">
+													$20.00
+												</p>
+
+												<p class="small mt-1 mb-0">
+													<a class="text-muted" href="category.html">
+														<i class="fas fa-tag mr-1" aria-hidden="true"></i
+														>Sweet
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 d-sm-none mb-5">
+								<hr />
+							</div>
+
+							<div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+								<hr />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ===== BODY SECTION END ===== -->
+
+			<!-- ===== FOOTER SECTION START ===== -->
+			<footer class="container-fluid" id="footer">
+				<div class="row text-center text-black footer-icons">
+					<div class="col">
+						<a
+							href="https://www.facebook.com/"
+							target="_blank"
+							class="footer-icon"
+						>
+							<i class="fab fa-facebook-f social-icon" aria-hidden="true"></i>
+						</a>
+						<a
+							href="https://www.instagram.com/"
+							target="_blank"
+							class="footer-icon"
+						>
+							<i class="fab fa-instagram social-icon" aria-hidden="true"></i>
+						</a>
+						<a href="mailto:camperhampers@example.com" class="footer-icon">
+							<i
+								class="fas fa-envelope-open social-icon"
+								aria-hidden="true"
+							></i>
+						</a>
+					</div>
+				</div>
+				<div class="row text-center text-black footer-links">
+					<div class="col">
+						<a
+							href="testimonials.html"
+							class="text-uppercase font-weight-bold footer-links"
+							>View Testimonials</a
+						>
+					</div>
+				</div>
+				<div class="row text-center text-black footer-links">
+					<div class="col">
+						<a
+							href="blog.html"
+							class="text-uppercase font-weight-bold footer-links"
+							>View Blog</a
+						>
+					</div>
+				</div>
+				<div class="row mt-2 text-center text-black copyright-text">
+					<div class="col">
+						<p>© CAMPER HAMPERS 2021 by Chloe Lewis MS4</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- ===== FOOTER SECTION END ===== -->
+
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
