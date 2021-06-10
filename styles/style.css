@@ -24,6 +24,10 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+.underlineTheme {
+  border-bottom: 2px solid #edc420;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80% !important;
@@ -103,7 +107,7 @@ body {
 }
 
 .btn:hover {
-  color: #212529 !important;
+  color: #edc420 !important;
   text-decoration: none !important;
 }
 
@@ -147,9 +151,10 @@ body {
   width: 100%;
   height: 150px;
   font-family: "Josefin Sans", sans-serif;
-  background-color: #d3d3d3;
+  background-color: #f5f5f5;
   font-size: 15px;
   padding-top: 10px;
+  border-top: 1px solid #edc420;
 }
 
 .social-icon {
@@ -171,38 +176,45 @@ body {
 }
 
 #hero-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url(https://wallpaperaccess.com/full/1108004.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://wallpaperaccess.com/full/1108004.jpg);
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
+  height: 450px;
 }
 
-#hero-text {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  color: #fff3d9;
+#hero-image video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#hero-image .overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#hero-image #hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 .shop-hampers-button {
-  background: black !important;
-  color: white !important;
-  min-width: 260px !important;
+  background: #fff !important;
+  color: #000 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .shop-hampers-button:hover {
   background: #222 !important;
-  color: white !important;
+  color: #edc420 !important;
 }
 
 .about-section {
@@ -210,7 +222,7 @@ body {
 }
 
 .blog-section-text {
-  background-color: #b3c0ae;
+  background-color: #ffdccb;
 }
 
 .blog-section-text h2 {
@@ -231,7 +243,7 @@ body {
 
 .view-blog-button:hover {
   background: #222 !important;
-  color: white !important;
+  color: #edc420 !important;
 }
 
 .testimonial-section-text {
@@ -297,7 +309,7 @@ body {
 
 .btn-outline-black:hover {
   background: #222 !important;
-  color: white !important;
+  color: #edc420 !important;
 }
 
 @media (max-width: 991px) {
