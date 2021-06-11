@@ -205,14 +205,14 @@ body {
   color: #fff;
 }
 
-.shop-hampers-button {
+.shop-programs-button {
   background: #fff !important;
   color: #000 !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.shop-hampers-button:hover {
+.shop-programs-button:hover {
   background: #222 !important;
   color: #edc420 !important;
 }
