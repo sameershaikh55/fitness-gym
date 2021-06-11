@@ -9,8 +9,9 @@
   box-sizing: border-box;
 }
 
-// THEME VARIABLES
+// THEME VARIABLES START
 $themeColor: #edc420;
+// THEME VARIABLES END
 
 body {
   overflow-x: hidden;
@@ -36,7 +37,7 @@ body {
 }
 
 // === HEADER START ===
-.fixed-top {
+.fixed-header {
   position: fixed;
   top: 0;
   right: 0;
@@ -44,7 +45,7 @@ body {
   z-index: 1030;
 }
 
-.logo-style {
+.logo-styling {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -52,12 +53,8 @@ body {
   text-transform: uppercase;
 }
 
-.main-logo-link {
+.main-link {
   width: fit-content;
-}
-
-.main-logo-link:hover {
-  color: #821536;
 }
 
 .nav-link {
@@ -91,7 +88,7 @@ body {
   color: #000 !important;
 }
 
-.border-black {
+.border-dark {
   border: 1px solid black !important;
 }
 
@@ -117,7 +114,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  .logo-style {
+  .logo-styling {
     font-size: 30px;
   }
 }
@@ -232,7 +229,7 @@ body {
   padding: 100px 130px;
 }
 
-.blog-section-text {
+.blog-section-txt {
   background-color: #ffdccb;
 
   h2 {
@@ -246,7 +243,7 @@ body {
   }
 }
 
-.view-blog-button {
+.view-blog-btn {
   background: black !important;
   color: white !important;
   min-width: 260px !important;
@@ -277,7 +274,7 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-  .blog-section-text h2 {
+  .blog-section-txt h2 {
     padding-top: 0px;
   }
   .testimonial-section-text h2 {
@@ -292,7 +289,7 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .blog-section-text {
+  .blog-section-txt {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -365,7 +362,7 @@ body {
   }
 }
 
-.allauth-form-inner-content {
+.form-content {
   p {
     margin-top: 1.5rem;
     color: #6c757d;
@@ -380,8 +377,8 @@ body {
     display: none;
   }
 }
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type="submit"] {
+.form-content button,
+.form-content input[type="submit"] {
   display: inline-block;
   font-weight: 400;
   color: #fff;

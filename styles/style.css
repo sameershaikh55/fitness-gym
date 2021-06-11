@@ -34,7 +34,7 @@ body {
   }
 }
 
-.fixed-top {
+.fixed-header {
   position: fixed;
   top: 0;
   right: 0;
@@ -42,7 +42,7 @@ body {
   z-index: 1030;
 }
 
-.logo-style {
+.logo-styling {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -50,14 +50,10 @@ body {
   text-transform: uppercase;
 }
 
-.main-logo-link {
+.main-link {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.main-logo-link:hover {
-  color: #821536;
 }
 
 .nav-link {
@@ -97,7 +93,7 @@ body {
   color: #000 !important;
 }
 
-.border-black {
+.border-dark {
   border: 1px solid black !important;
 }
 
@@ -122,7 +118,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  .logo-style {
+  .logo-styling {
     font-size: 30px;
   }
 }
@@ -221,27 +217,27 @@ body {
   padding: 100px 130px;
 }
 
-.blog-section-text {
+.blog-section-txt {
   background-color: #ffdccb;
 }
 
-.blog-section-text h2 {
+.blog-section-txt h2 {
   padding-top: 100px;
   padding-bottom: 20px;
 }
 
-.blog-section-text p {
+.blog-section-txt p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.view-blog-button {
+.view-blog-btn {
   background: black !important;
   color: white !important;
   min-width: 260px !important;
 }
 
-.view-blog-button:hover {
+.view-blog-btn:hover {
   background: #222 !important;
   color: #edc420 !important;
 }
@@ -266,7 +262,7 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-  .blog-section-text h2 {
+  .blog-section-txt h2 {
     padding-top: 0px;
   }
   .testimonial-section-text h2 {
@@ -280,7 +276,7 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .blog-section-text {
+  .blog-section-txt {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -347,22 +343,22 @@ body {
   }
 }
 
-.allauth-form-inner-content p {
+.form-content p {
   margin-top: 1.5rem;
   color: #6c757d;
 }
 
-.allauth-form-inner-content input {
+.form-content input {
   border-color: #000;
   border-radius: 0;
 }
 
-.allauth-form-inner-content label:not([for="id_remember"]) {
+.form-content label:not([for="id_remember"]) {
   display: none;
 }
 
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type="submit"] {
+.form-content button,
+.form-content input[type="submit"] {
   display: inline-block;
   font-weight: 400;
   color: #fff;
