@@ -38,7 +38,7 @@
 			crossorigin="anonymous"
 		></script>
 		<!-- LINKS END -->
-		<title>Blog</title>
+		<title>Merchandise</title>
 	</head>
 	<body>
 		<!-- ===== HEADER SECTION START ===== -->
@@ -234,12 +234,8 @@
 									class="dropdown-menu border-0"
 									aria-labelledby="all-products-link"
 								>
-									<a href="products.html" class="logo-font dropdown-item"
-										>By Price</a
-									>
-									<a href="products.html" class="logo-font dropdown-item"
-										>By Category</a
-									>
+									<a href="products.html" class="logo-font dropdown-item">By Price</a>
+									<a href="products.html" class="logo-font dropdown-item">By Category</a>
 									<a href="products.html" class="logo-font dropdown-item"
 										>Fitness Programs</a
 									>
@@ -291,75 +287,335 @@
 		</div>
 		<!-- ===== HEADER SECTION END ===== -->
 
-		<!-- ===== BLOG BODY SECTION START ===== -->
-		<div class="container testimonials-heading">
+		<!-- ===== BODY SECTION START ===== -->
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-12">
-					<hr />
-					<h2 class="logo-font mb-4">
-						TRANSFORMATIONS
-						LIVING PROOF</h2>
-					<h5 class="font-weight-bold">
-						Check out the hundreds of clients who have used my online coaching to get into the best shape of their lives.
-					</h5>
-					<hr />
-					<img
-						class="w-100 testimonials-page-image img-fluid"
-						src="https://www.exercise.co.uk/wp/wp-content/uploads/2019/01/What-Are-Battle-Ropes-and-How-to-Use-Them-Sub-1.jpg"
-						alt="Responsive image"
-					/>
+				<div class="col text-center mt-3">
+					<h2 class="logo-font">Programs</h2>
+					<hr class="w-50 mb-1 mx-auto" />
 				</div>
 			</div>
-		</div>
-
-		<div class="container blog-container">
-			<div class="row card card-style-blog">
-				<div class="card-body">
-					<div class="col-12 text-center">
-						<i class="fas fa-campground" aria-hidden="true"></i>
-					</div>
-					<div class="col-12">
-						<p class="font-weight-bold text-uppercase logo-font text-center">
-							Welcome to our blog
-						</p>
-					</div>
-					<div class="col-12">
-						<p>
-							Hello and welcome to our blog!
-							The greatest fitness app on the planet. Whether you’re looking to lose fat, build muscle, get stronger or improve performance, we’ve got you covered. With over 20 different training plans and hundreds of delicious meals, all customised to your individual needs, plus a free 7 day trial, there’s never been a better time to join the team.
-						</p>
-					</div>
-					<div class="col-12">
-						<p>By May 28, 2021, 10:57 a.m.</p>
-					</div>
-				</div>
-				<div class="row blog-page-btns">
-					<div class="col text-right">
-						<a href="/" class="btn btn-outline-black rounded-0 btn-sm">
-							<span class="icon">
-								<i class="fas fa-chevron-left" aria-hidden="true"></i>
-							</span>
-							<span class="text-uppercase">Home</span>
-						</a>
-					</div>
-					<div class="col text-left">
-						<a
-							href="products.html"
-							class="btn btn-outline-black rounded-0 btn-sm"
+			<div class="row">
+				<div class="product-container col-10 offset-1">
+					<div class="row mt-1 mb-2">
+						<div
+							class="
+								col-12 col-md-6
+								my-auto
+								order-md-last
+								d-flex
+								justify-content-center justify-content-md-end
+							"
 						>
-							<span class="text-uppercase">View Programs</span>
-							<span class="icon">
-								<i class="fas fa-chevron-right" aria-hidden="true"></i>
-							</span>
-						</a>
+							<div class="sort-select-wrapper w-50">
+								<select
+									id="sort-selector"
+									class="
+										custom-select custom-select-sm
+										rounded-0
+										border-dark
+									"
+								>
+									<option value="reset" selected="">Sort by...</option>
+									<option value="price_asc">Price (low to high)</option>
+									<option value="price_desc">Price (high to low)</option>
+									<option value="name_asc">Name (A-Z)</option>
+									<option value="name_desc">Name (Z-A)</option>
+									<option value="category_asc">Category (A-Z)</option>
+									<option value="category_desc">Category (Z-A)</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 order-md-first">
+							<p class="text-muted mt-3 text-center text-md-left">7 Products</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://www.dmarge.com/wp-content/uploads/2021/04/mens-gym-clothing-brands-gym-king.jpg"
+										alt="Body Building"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Hooded Shirt</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$25.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a
+													class="text-muted"
+													href="products.html"
+												>
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Merchandise
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://i.pinimg.com/originals/31/ed/06/31ed06f71cccc8bc97a9b9fd5c6e9dc4.jpg"
+										alt="Body Building"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Sandoo</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$20.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a
+													class="text-muted"
+													href=""
+												>
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Merchandise
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://i.pinimg.com/originals/f1/7a/bf/f17abf20d2eb8e8ee4eb71f0e84c65b0.jpg"
+										alt="Body Building"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Full Workout Kit</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$40.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a
+													class="text-muted"
+													href=""
+												>
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Merchandise
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-lg-block d-xl-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://dcassetcdn.com/design_img/932130/131353/131353_5326719_932130_image.jpg"
+										alt="LEAN BULKING PROGRAM"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Shirts Kit</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$25.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a class="text-muted" href="">
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Merchandise
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-xl-block mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://res.cloudinary.com/supportersplace/image/fetch/w_640,f_auto/http://static.supportersplace.se/product/official-merchandise-gym-bag-fd-11778-1.jpg"
+										alt="LIPSETT FIT PLAN"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Manchester United Gym Bag</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$20.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a class="text-muted" href="">
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Merchandise
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://d3qmmq83o423s1.cloudfront.net/img/developerimg/choco_life_20161214074908_db/mebase/CustomSectionStyle/Images/mevofit_fitness_merchandise_gym_bags.webp"
+										alt="Campfire Drinks"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Conquer Bags</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$35.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a
+													class="text-muted"
+													href=""
+												>
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Merchandise
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-lg-block d-xl-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://www.promotional-images.co.uk/prodimages/ACC-030686/0605019-c-lg.jpg"
+										alt="Campfire Treats"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">7 Piece Set Consisting</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$30.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a
+													class="text-muted"
+													href=""
+												>
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Merchandise
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- ===== BLOG BODY SECTION END ===== -->
+		<!-- ===== BODY SECTION END ===== -->
 
-    <!-- ===== FOOTER SECTION START ===== -->
-			<footer class="container-fluid" id="footer">
+
+		   <!-- ===== FOOTER SECTION START ===== -->
+			<footer class="container-fluid mt-4" id="footer">
 				<div class="row text-center text-black footer-icons">
 					<div class="col">
 						<a

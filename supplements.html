@@ -38,7 +38,7 @@
 			crossorigin="anonymous"
 		></script>
 		<!-- LINKS END -->
-		<title>Bag</title>
+		<title>Supplements</title>
 	</head>
 	<body>
 		<!-- ===== HEADER SECTION START ===== -->
@@ -96,7 +96,7 @@
 								aria-labelledby="user-options"
 							>
 								<a href="register.html" class="dropdown-item logo-font">Register</a>
-								<a href="login.html" class="dropdown-item logo-font">Login</a>
+								<a href="register.html" class="dropdown-item logo-font">Login</a>
 							</div>
 						</li>
 						<li class="list-inline-item">
@@ -193,8 +193,8 @@
 								class="dropdown-menu border-0"
 								aria-labelledby="user-options-mob"
 							>
-								<a href="register.html" class="dropdown-item">Register</a>
-								<a href="login.html" class="dropdown-item">Login</a>
+								<a href="" class="dropdown-item">Register</a>
+								<a href="" class="dropdown-item">Login</a>
 							</div>
 						</li>
 						<li class="list-inline-item">
@@ -218,7 +218,7 @@
 								>
 									Home
 								</a>
-							</li>	
+							</li>
 							<li class="nav-item dropdown">
 								<a
 									class="logo-font font-weight-bold nav-link text-black mr-5"
@@ -234,12 +234,8 @@
 									class="dropdown-menu border-0"
 									aria-labelledby="all-products-link"
 								>
-									<a href="products.html" class="logo-font dropdown-item"
-										>By Price</a
-									>
-									<a href="products.html" class="logo-font dropdown-item"
-										>By Category</a
-									>
+									<a href="products.html" class="logo-font dropdown-item">By Price</a>
+									<a href="products.html" class="logo-font dropdown-item">By Category</a>
 									<a href="products.html" class="logo-font dropdown-item"
 										>Fitness Programs</a
 									>
@@ -290,39 +286,258 @@
 			</div>
 		</div>
 		<!-- ===== HEADER SECTION END ===== -->
-		
-		
-		<!-- ===== SHOPPING BAG START ===== -->
-		<div class="container mb-2 pb-6">
-   <div class="row">
-      <div class="col">
-         <hr>
-         <h2 class="logo-font mb-4">Prog<span class="underlineTheme">rams</span></h2>
-         <hr>
-      </div>
-   </div>
-   <!--Shopping Bag -->
-   <div class="row">
-      <div class="col">
-         
-         <p class="lead mb-5 empty-bag">empty.</p>
-         <a href="products.html" class="btn btn-outline-black rounded-0 btn-lg">
-         <span class="icon">
-         <i class="fas fa-chevron-left" aria-hidden="true"></i>
-         </span>
-         <span class="text-uppercase">View programs</span>
-         </a>
-         
-      </div>
-   </div>
-</div>
-		<!-- ===== SHOPPING BAG END ===== -->
-		
 
-		
-		<!-- ===== FOOTER SECTION START ===== -->
-		<div id="regFooter">
-			<footer class="container-fluid" id="footer">
+		<!-- ===== BODY SECTION START ===== -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col text-center mt-3">
+					<h2 class="logo-font">Programs</h2>
+					<hr class="w-50 mb-1 mx-auto" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="product-container col-10 offset-1">
+					<div class="row mt-1 mb-2">
+						<div
+							class="
+								col-12 col-md-6
+								my-auto
+								order-md-last
+								d-flex
+								justify-content-center justify-content-md-end
+							"
+						>
+							<div class="sort-select-wrapper w-50">
+								<select
+									id="sort-selector"
+									class="
+										custom-select custom-select-sm
+										rounded-0
+										border-dark
+									"
+								>
+									<option value="reset" selected="">Sort by...</option>
+									<option value="price_asc">Price (low to high)</option>
+									<option value="price_desc">Price (high to low)</option>
+									<option value="name_asc">Name (A-Z)</option>
+									<option value="name_desc">Name (Z-A)</option>
+									<option value="category_asc">Category (A-Z)</option>
+									<option value="category_desc">Category (Z-A)</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 order-md-first">
+							<p class="text-muted mt-3 text-center text-md-left">7 Products</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://lh3.googleusercontent.com/xTa0eFVcqGpm9KyLx227OptQov51B0-UPEiazkN3rIkzKCPuMpISpuxtfEq5AoNjupKKfe-g=w1080-h608-p-no-v0"
+										alt="Body Building"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">GYM SUPPLEMENTS</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$25.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a
+													class="text-muted"
+													href="products.html"
+												>
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Supplements
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://manofmany.com/wp-content/uploads/2021/02/CD-21-0131_VS_MOM-Article-Images_SKUs-onlyLifestyle.jpg"
+										alt="Body Building"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Best Bodybuilding Supplements</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$20.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a
+													class="text-muted"
+													href=""
+												>
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Supplements
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://cdn.dribbble.com/users/1619188/screenshots/10344927/media/5a04ecbc21b7651b67971ccc06bba570.jpg?compress=1&resize=400x300"
+										alt="Body Building"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Full Workout Kit</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$40.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a
+													class="text-muted"
+													href=""
+												>
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Supplements
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-lg-block d-xl-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+                    src="https://images-na.ssl-images-amazon.com/images/I/81-rhha4SbL._AC_SX425_.jpg"
+                    alt="LEAN BULKING PROGRAM"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Beta Alanine</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$25.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a class="text-muted" href="">
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Supplements
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-none d-xl-block mb-5">
+							<hr />
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+							<div class="card h-100 border-0">
+								<a href="singleProduct.html">
+									<img
+										class="cardImg"
+										src="https://images-na.ssl-images-amazon.com/images/I/51pMPcSKQLL._AC_SX425_.jpg"
+										alt="LIPSETT FIT PLAN"
+									/>
+								</a>
+
+								<div class="card-body pb-0">
+									<p class="mb-0">Alanine Powder</p>
+								</div>
+								<div class="card-footer bg-white pt-0 border-0 text-left">
+									<div class="row">
+										<div class="col">
+											<p class="lead mb-0 text-left font-weight-bold">$20.00</p>
+
+											<p class="small mt-1 mb-0">
+												<a class="text-muted" href="">
+													<i class="fas fa-tag mr-1" aria-hidden="true"></i
+													>Supplements
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+
+						<div class="col-12 d-sm-none mb-5">
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ===== BODY SECTION END ===== -->
+
+
+		   <!-- ===== FOOTER SECTION START ===== -->
+			<footer class="container-fluid mt-4" id="footer">
 				<div class="row text-center text-black footer-icons">
 					<div class="col">
 						<a
@@ -349,9 +564,7 @@
 				</div>
 				<div class="row text-center text-black footer-links">
 					<div class="col">
-						<a
-							href="testimonials.html"
-							class="text-uppercase font-weight-bold footer-links"
+						<a href="testimonials.html" class="text-uppercase font-weight-bold footer-links"
 							>View Testimonials</a
 						>
 					</div>
@@ -371,7 +584,6 @@
 					</div>
 				</div>
 			</footer>
-		</div>
 		</div>
 		<!-- ===== FOOTER SECTION END ===== -->
 	</body>
