@@ -405,6 +405,11 @@ body {
   padding-bottom: 250px;
 }
 
+#payment-form .form-control, #card-element {
+  color: #000;
+  border: 1px solid #000;
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/

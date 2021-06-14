@@ -293,11 +293,11 @@
 		
 		
 		<!-- ===== SHOPPING BAG START ===== -->
-		<div class="container mb-2 pb-6">
+<div class="container mb-2 pb-6">
    <div class="row">
       <div class="col">
          <hr>
-         <h2 class="logo-font mb-4">Prog<span class="underlineTheme">rams</span></h2>
+         <h2 class="logo-font mb-4">Shopping Bag</h2>
          <hr>
       </div>
    </div>
@@ -305,13 +305,163 @@
    <div class="row">
       <div class="col">
          
-         <p class="lead mb-5 empty-bag">empty.</p>
-         <a href="products.html" class="btn btn-outline-black rounded-0 btn-lg">
-         <span class="icon">
-         <i class="fas fa-chevron-left" aria-hidden="true"></i>
-         </span>
-         <span class="text-uppercase">View programs</span>
-         </a>
+         <div class="d-block d-md-none">
+            <div class="row">
+               <div class="col">
+                  <h6><strong>Bag Total: $25.00</strong></h6>
+<h6>Delivery: $2.50</h6>
+<h4 class="mt-4"><strong>Grand Total: $27.50</strong></h4>
+
+               </div>
+            </div>
+            <div class="row">
+               <div class="col">
+                  <a href="/products/" class="btn btn-outline-black rounded-0 btn-lg">
+    <span class="icon">
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+    </span>
+    <span class="text-uppercase">Keep Shopping</span>
+</a>
+<a href="checkout.html" class="btn btn-black rounded-0 btn-lg">
+    <span class="text-uppercase">Secure Checkout</span>
+    <span class="icon">
+        <i class="fas fa-lock" aria-hidden="true"></i>
+    </span>
+</a>
+                  <p class="text-muted mb-5">A summary of your bag contents is below:</p>
+               </div>
+            </div>
+            
+            <div class="row">
+               <div class="col-12 col-sm-6 mb-2">
+                  
+<img class="img-fluid rounded" src="https://camperhampers.s3.amazonaws.com/media/cheese.jpg" alt="Artisan Cheese Hamper">
+
+               </div>
+               <div class="col-12 col-sm-6 mb-2">
+                  <p class="my-0"><strong>Artisan Cheese Hamper</strong></p>
+<p class="my-0 small text-muted">SKU: 123451</p>
+               </div>
+               <div class="col-12 col-sm-6 order-sm-last">
+                  <p class="my-0">Price Each: $25.00</p>
+                  <p><strong>Subtotal: </strong>$25.00</p>
+               </div>
+               <div class="col-12 col-sm-6">
+                  <form class="form update-form" method="POST" action="/bag/adjust/1/">
+    <input type="hidden" name="csrfmiddlewaretoken" value="gmov55FnHScaoxVov51oXMqElwjhuLCqy57VdtjKl6g5m41RF0SWcyoFKfdZNaJL">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <button class="decrement-qty btn btn-sm btn-black rounded-0" data-item_id="1" id="decrement-qty_1" disabled="">
+                    <span>
+                        <i class="fas fa-minus fa-sm" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+            <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="1" id="id_qty_1">
+            <div class="input-group-append">
+                <button class="increment-qty btn btn-sm btn-black rounded-0" data-item_id="1" id="increment-qty_1">
+                    <span>
+                        <i class="fas fa-plus fa-sm" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+<a class="update-link text-info"><small>Update</small></a>
+<a class="remove-item text-danger float-right" id="remove_1"><small>Remove</small></a>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col">
+                  <hr>
+               </div>
+            </div>
+            
+         </div>
+         <div class="table-responsive rounded d-none d-md-block">
+            <table class="table table-sm table-borderless">
+               <thead class="text-black">
+                  <tr>
+                     <th scope="col">Product Info</th>
+                     <th scope="col"></th>
+                     <th scope="col">Price</th>
+                     <th scope="col">Qty</th>
+                     <th scope="col">Subtotal</th>
+                  </tr>
+               </thead>
+               
+               <tbody><tr>
+                  <td class="p-3 w-25">
+                     
+<img class="img-fluid rounded" src="https://cdn.dribbble.com/users/1619188/screenshots/10344927/media/5a04ecbc21b7651b67971ccc06bba570.jpg?compress=1&resize=400x300" alt="Artisan Cheese Hamper">
+
+                  </td>
+                  <td class="py-3">
+                     <p class="my-0"><strong>Full Workout Kit</strong></p>
+<p class="my-0 small text-muted">SKU: 123451</p>
+                  </td>
+                  <td class="py-3">
+                     <p class="my-0">$25.00</p>
+                  </td>
+                  <td class="py-3 w-25">
+                     <form class="form update-form" method="POST" action="/bag/adjust/1/">
+    <input type="hidden" name="csrfmiddlewaretoken" value="gmov55FnHScaoxVov51oXMqElwjhuLCqy57VdtjKl6g5m41RF0SWcyoFKfdZNaJL">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <button class="decrement-qty btn btn-sm btn-black rounded-0" data-item_id="1" id="decrement-qty_1">
+                    <span>
+                        <i class="fas fa-minus fa-sm" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+            <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="1" id="id_qty_1">
+            <div class="input-group-append">
+                <button class="increment-qty btn btn-sm btn-black rounded-0" data-item_id="1" id="increment-qty_1">
+                    <span>
+                        <i class="fas fa-plus fa-sm" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+<a class="update-link text-info"><small>Update</small></a>
+<a class="remove-item text-danger float-right" id="remove_1"><small>Remove</small></a>
+                  </td>
+                  <td class="py-3">
+                     <p class="my-0">$25.00</p>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <td colspan="5" class="pt-5 text-right">
+                     <h6><strong>Bag Total: $25.00</strong></h6>
+<h6>Delivery: $2.50</h6>
+<h4 class="mt-4"><strong>Grand Total: $27.50</strong></h4>
+
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="5" class="text-right">
+                     <a href="products.html" class="btn btn-outline-black rounded-0 btn-lg">
+    <span class="icon">
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+    </span>
+    <span class="text-uppercase">Keep Shopping</span>
+</a>
+<a href="checkout.html" class="btn btn-black rounded-0 btn-lg">
+    <span class="text-uppercase">Secure Checkout</span>
+    <span class="icon">
+        <i class="fas fa-lock" aria-hidden="true"></i>
+    </span>
+</a>
+                  </td>
+               </tr>
+            </tbody></table>
+         </div>
          
       </div>
    </div>
